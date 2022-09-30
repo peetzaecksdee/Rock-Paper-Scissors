@@ -1,0 +1,90 @@
+:root {
+    font-family: Nunito;
+    --text-color: #f6fcff;
+    --secondary-background: #092c3a;
+    --background-color: #243c4d;
+    --button-color: #2e4d63;
+    --button-color-hover: #284357;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color)
+}
+
+.white {
+    color: var(--text-color);
+}
+
+.slight-bold {
+    font-weight: 500;
+}
+
+.header,
+.body,
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.header {
+    align-items: center;
+    background-color: var(--secondary-background);
+}
+
+.big-text {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex: 1;
+    flex-direction: column;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+
+.scores {
+}
+
+.box {
+    align-content: center;
+    margin-top: 48px;
+}
+
+.button {
+    border: none;
+    background-color: var(--button-color);
+    width: 2em;
+    height: 2em;
+    font-size: 5em;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 24px;
+}
+
+.button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.footer {
+    color: var(--text-color);
+}
+
+.footer img {
+    margin-left: 4px;
+    width: 20px;
+}
