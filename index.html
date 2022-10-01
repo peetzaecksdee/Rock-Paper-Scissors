@@ -21,20 +21,22 @@
         <div class="body">
             <div class="container">
                 <div class="text-content white">
-                    <h2>Please select your choice.</h2>
-                    <h3 class="slight-bold">First to 5 scores win</h3>
+                    <h2 id="winner">Please select your choice.</h2>
+                    <h3 class="slight-bold" id="context">First to 5 scores win</h3>
                 </div>
                 <div class="scores white">
                     <div class="score-box">
                         <div class="player">
                             <h2>Player</h2>
-                            <h1 id="score">0</h1>
+                            <h1 class="selection" id="player-selection">❔</h1>
+                            <h1 id="player-score">0</h1>
                         </div>
                     </div>
                     <div class="score-box">
                         <div class="computer">
                             <h2>Computer</h2>
-                            <h1 id="score">0</h1>
+                            <h1 class="selection" id="computer-selection">❔</h1>
+                            <h1 id="computer-score">0</h1>
                         </div>
                     </div>
                 </div>
@@ -45,16 +47,21 @@
                         <button class="button" id="scissors">✌🏻</button>
                     </div>
                 </div>
+                <div class="replay">
+                    <h1 id="replayText"></h1>
+                    <button class="replayButton" id="replayButton">Play Again?</button>
+                </div>
             </div>
         </div>
         <footer>
             <p>A game created by peetzaecksdee</p>
             <a href="https://github.com/peetzaecksdee" target="_blank"
-                ><img
-                    src="https://assets.stickpng.com/thumbs/5847f98fcef1014c0b5e48c0.png"
-                    alt="My github profile"
+            ><img
+            src="https://assets.stickpng.com/thumbs/5847f98fcef1014c0b5e48c0.png"
+            alt="My github profile"
             /></a>
         </footer>
         <script src="script.js"></script>
     </body>
-</html>
+    </html>
+    

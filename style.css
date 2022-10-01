@@ -60,14 +60,25 @@ body {
 .scores {
     display: flex;
     justify-content: center;
-    margin: 3em 0;
+    margin: 2em 0;
     gap: 12em;
     text-align: center;
 }
 
+.player > *,
+.computer > *{
+    margin: 12px;
+}
+
+.selection {
+    font-size: 64px;
+}
+
 .box {
+    display: flex;
     align-content: center;
-    margin: 48px 0;
+    justify-content: center;
+    margin-bottom: 4em;
 }
 
 .button {
@@ -76,9 +87,9 @@ body {
     width: 2em;
     height: 2em;
     font-size: 5em;
+    margin: 0 16px;
     border-radius: 8px;
     cursor: pointer;
-    margin: 0 16px;
 }
 
 .button:hover {
@@ -99,4 +110,25 @@ footer {
 
 footer img {
     width: 20px;
+}
+
+.replay {
+    visibility: hidden;
+    color: var(--text-color);
+}
+
+.replayButton {
+    width: 200px;
+    height: 75px;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 16px 0;
+}
+
+.replayButton:hover {
+    background-color: var(--button-color-hover);
 }
