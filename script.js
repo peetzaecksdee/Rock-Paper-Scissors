@@ -1,0 +1,1 @@
+const ROCK = document.querySelector("#rock");
