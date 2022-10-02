@@ -9,10 +9,18 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-    background-color: var(--background-color)
+    margin-bottom: 20px;
+    background-color: var(--background-color);
 }
 
 .white {
@@ -29,28 +37,29 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 16px;
 }
 
 .header {
-    align-items: center;
+    padding: 16px 0;
+    justify-content: center;
     background-color: var(--secondary-background);
 }
 
-.big-text {
-    font-size: 36px;
+.title {
+    font-size: 32px;
     font-weight: 600;
 }
 
 .body {
+    margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 16px 0;
 }
 
 .container {
-    flex: 1;
     flex-direction: column;
-    width: 80%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -59,14 +68,13 @@ body {
 
 .scores {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 2em 0;
-    gap: 12em;
     text-align: center;
 }
 
 .player > *,
-.computer > *{
+.computer > * {
     margin: 12px;
 }
 
@@ -74,20 +82,19 @@ body {
     font-size: 64px;
 }
 
-.box {
+.buttons {
     display: flex;
-    align-content: center;
     justify-content: center;
-    margin-bottom: 4em;
+    align-items: center;
+    gap: 24px;
 }
 
 .button {
     border: none;
     background-color: var(--button-color);
-    width: 2em;
-    height: 2em;
-    font-size: 5em;
-    margin: 0 16px;
+    height: 150px;
+    width: 150px;
+    font-size: 75px;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -105,7 +112,7 @@ footer {
     color: var(--text-color);
     width: 100%;
     gap: 10px;
-    padding: 0.5em 0;
+    padding: 10px;
 }
 
 footer img {
@@ -115,6 +122,7 @@ footer img {
 .replay {
     visibility: hidden;
     color: var(--text-color);
+    margin: 4em 0;
 }
 
 .replayButton {
@@ -131,4 +139,31 @@ footer img {
 
 .replayButton:hover {
     background-color: var(--button-color-hover);
+}
+
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .button {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
+
+    .replayButton {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+    
+    .text-content h2 {
+        font-size: 18px;
+    }
+
+    .text-content h3 {
+        font-size: 16px;
+    }
 }
