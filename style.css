@@ -1,0 +1,106 @@
+* *::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito";
+  background: #E1EFF6;
+}
+
+/* Body */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.text-container {
+  padding: 12px;
+  text-align: center;
+}
+
+.winner {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.scores-container {
+  padding: 16px;
+  margin: 16px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.player {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.choice {
+  font-size: 64px;
+}
+
+.score {
+  font-size: 32px;
+}
+
+.button-container {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.button-container > button {
+  width: 3em;
+  height: 3em;
+  font-size: 200%;
+}
+
+.replay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 32px;
+}
+
+.replay-text {
+  font-size: 32px;
+}
+
+.replay-button {
+  width: 200px;
+  height: 50px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: var(--hero-background);
+  text-align: center;
+  color: var(--hero-main-text);
+  font-size: 18px;
+}
+
+footer img {
+  width: 18px;
+  height: 18px;
+}
